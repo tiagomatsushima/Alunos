@@ -1,0 +1,25 @@
+﻿@model List<AlunosWebApp.Models.Domain.Aluno>
+
+<h3>Alunos</h3>
+
+<table class="table table-light table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Ativo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var aluno in Model)
+        {
+            <tr>
+                <td>@aluno.Id</td>
+                <td>@aluno.Nome</td>
+                <td>@aluno.Email</td>
+                <td>@aluno.Ativo</td>
+            </tr>
+        }
+    </tbody>
+</table>

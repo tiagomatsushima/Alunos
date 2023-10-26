@@ -1,0 +1,20 @@
+﻿@model AlunosWebApp.Models.AdicionarAlunoViewModel
+
+
+<h3>Adicionar Aluno</h3>
+<form method="post" action="Adicionar" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Nome</label>
+        <input type="text" class="form-control" asp-for="Nome">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">E-mail</label>
+        <input type="email" class="form-control" asp-for="Email">
+    </div>
+    <div class="form-check form-switch">
+        <input class="form-check-input btn-lg" type="checkbox" role="switch" id="flexSwitchCheckChecked" asp-for="Ativo" checked>
+        <label class="form-check-label" for="flexSwitchCheckChecked">Ativo</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-5">Adicionar</button>
+</form>
